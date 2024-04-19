@@ -1,13 +1,40 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #22254b;
+}
+.app-container{
+  display: flex;
+  flex-wrap: wrap; 
+  /*아이템 사이즈가 브라우저의 width 길이보다 길 때,
+   아이템을 브라우저 길이에 맞춰 줄이는 것이 아니라 다음 줄로 내려주는 역할*/
+  justify-content: center;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.movie-container {
+  width: 250px;
+  margin: 16px;
+  background-color: #373b69;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+  
+}
+
+.movie-container img{
+  max-width: 100%;
+}
+
+.movie-info {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie-info h4{
+  margin: 0;
+}
+
+.movie-info span {
+  margin-left: 3px;  
 }
