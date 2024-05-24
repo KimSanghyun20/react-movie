@@ -1,11 +1,52 @@
-body {
-  background-color: #22254b;
+@import 'reset.css';
+
+.root-wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
 }
-.app-container{
+
+/*header 시작*/
+.header-container {
+  background-color: rgba(3,37,65,1);
+}
+
+.header-wrap {
+  height: 64px;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.header-left-wrap{
+  display: flex;
+}
+
+.header-left-wrap ul {
+  display: flex;
+  margin-left: 16px;
+}
+
+.header-left-wrap li{
+  margin-right: 14px;
+  padding: 8px;
+}
+
+.header-nav-item {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.page-container {
+  margin: 0 auto;
+}
+
+.movies-container{
   display: flex;
   flex-wrap: wrap; 
-  /*아이템 사이즈가 브라우저의 width 길이보다 길 때,
-   아이템을 브라우저 길이에 맞춰 줄이는 것이 아니라 다음 줄로 내려주는 역할*/
   justify-content: center;
 
 }
@@ -38,3 +79,70 @@ body {
 .movie-info span {
   margin-left: 3px;  
 }
+
+.loginBtn {
+  border-radius: 30%;
+  border: none;
+  background-color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  width: 80px;
+  height: 32px;
+}
+
+.loginMsg {
+  color: white;
+  text-decoration: none;
+  margin-left: 16px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.login-control {
+  display: flex;
+  align-items: center;
+}
+/*
+body {
+  background-color: #22254b;
+}
+.app-container{
+  display: flex;
+  flex-wrap: wrap; 
+  /*아이템 사이즈가 브라우저의 width 길이보다 길 때,
+   아이템을 브라우저 길이에 맞춰 줄이는 것이 아니라 다음 줄로 내려주는 역할
+  justify-content: center;
+
+}
+
+.movie-container {
+  width: 250px;
+  margin: 16px;
+  background-color: #373b69;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+  
+}
+
+.movie-container img{
+  max-width: 100%;
+}
+
+.movie-info {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie-info h4{
+  margin: 0;
+}
+
+.movie-info span {
+  margin-left: 3px;  
+}
+*/
+
